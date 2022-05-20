@@ -104,3 +104,12 @@ Entrypoint application = js/application-66c010fa5c9afebc5eb5.js js/application-6
 Completed 200 OK in 17900ms (Views: 17821.1ms | ActiveRecord: 0.0ms | Allocations: 96566)
 
 
+Started GET "/" for 31.217.21.221 at 2022-05-20 10:44:17 +0000
+Cannot render console from 10.3.0.168! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 5)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 152ms (Views: 135.4ms | ActiveRecord: 0.0ms | Allocations: 7841)
+
+
