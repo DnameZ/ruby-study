@@ -56,3 +56,51 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 90ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 565)
 
 
+Started GET "/" for 31.217.21.221 at 2022-05-20 10:22:24 +0000
+Cannot render console from 10.3.0.168! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (4.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 201)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 193ms (Views: 161.4ms | ActiveRecord: 0.0ms | Allocations: 10592)
+
+
+Started GET "/" for 31.217.21.221 at 2022-05-20 10:22:27 +0000
+Cannot render console from 10.3.0.168! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 5)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 96ms (Views: 95.4ms | ActiveRecord: 0.0ms | Allocations: 4005)
+
+
+Started GET "/" for 31.217.21.221 at 2022-05-20 10:39:10 +0000
+Cannot render console from 10.3.0.168! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 201)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /workspace/ruby-study/public/packs
+[Webpacker] Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+[Webpacker] Hash: 489a6061338db953f251
+Version: webpack 4.43.0
+Time: 5996ms
+Built at: 2022-05-20 10:39:28 ├F10: AM┤
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-66c010fa5c9afebc5eb5.js    124 KiB  application  [emitted] [immutable]  application
+js/application-66c010fa5c9afebc5eb5.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-66c010fa5c9afebc5eb5.js js/application-66c010fa5c9afebc5eb5.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 800 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 17900ms (Views: 17821.1ms | ActiveRecord: 0.0ms | Allocations: 96566)
+
+
