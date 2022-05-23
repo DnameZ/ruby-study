@@ -142,7 +142,7 @@
 			 <h4>Recent posts</h4>
 			 
 			 <% @articles.each do |a| %>
-			 <strong> <%= link_to a.title, a %> </strong> 
+			 <strong>Created by : <%=  link_to a.user.username %> : <%= link_to a.title, a %> </strong> 
 			 <p>
 				<%= truncate(a.content)  %>
 			 </p>
