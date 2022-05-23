@@ -15061,3 +15061,66 @@ Migrating to AddUserIdToArticles (20220523114706)
   [1m[35m (76.3ms)[0m  [1m[36mcommit transaction[0m
   [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/?t=1653309783687" for 193.19.222.123 at 2022-05-23 12:43:05 +0000
+Cannot render console from 10.3.0.168! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Parameters: {"t"=>"1653309783687"}
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mArticle Load (1.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/pages/index.html.erb:144
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/pages/index.html.erb:145
+  Rendered pages/index.html.erb within layouts/application (Duration: 263.1ms | Allocations: 20289)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 8.2ms | Allocations: 618)
+  Rendered layouts/_foot.html.erb (Duration: 0.6ms | Allocations: 214)
+Completed 200 OK in 586ms (Views: 501.8ms | ActiveRecord: 4.6ms | Allocations: 39325)
+
+
+Started GET "/?t=1653309783687" for 193.19.222.123 at 2022-05-23 12:43:09 +0000
+Cannot render console from 10.3.0.168! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#index as HTML
+  Parameters: {"t"=>"1653309783687"}
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/pages/index.html.erb:144
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/pages/index.html.erb:145
+  Rendered pages/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1537)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 1.8ms | Allocations: 289)
+  Rendered layouts/_foot.html.erb (Duration: 0.1ms | Allocations: 40)
+Completed 200 OK in 94ms (Views: 46.0ms | ActiveRecord: 0.3ms | Allocations: 8510)
+
+
+Started GET "/?t=1653309783687" for 193.19.222.123 at 2022-05-23 12:43:11 +0000
+Cannot render console from 10.3.0.168! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#index as HTML
+  Parameters: {"t"=>"1653309783687"}
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/pages/index.html.erb:144
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/pages/index.html.erb:145
+  Rendered pages/index.html.erb within layouts/application (Duration: 18.5ms | Allocations: 1528)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 1.7ms | Allocations: 283)
+  Rendered layouts/_foot.html.erb (Duration: 0.1ms | Allocations: 40)
+Completed 200 OK in 109ms (Views: 103.4ms | ActiveRecord: 1.4ms | Allocations: 8478)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /workspace/ruby-study/config/environment.rb:5)
