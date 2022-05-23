@@ -1,5 +1,7 @@
 class PagesController < ApplicationController
+  
   def index
+	  @articles = Article.all
   end
 
   def contact
@@ -7,4 +9,5 @@ class PagesController < ApplicationController
 
   def about
   end
+
 end
