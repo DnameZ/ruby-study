@@ -15,8 +15,8 @@ class CommentsController < ApplicationController
 	end
 	
 	def update
-		@addArticle = Article.find(params[:article_id])
-		@comment = @article.comment.find(params[:id])
+		@article = Article.find(params[:article_id])
+		@comment = @article.comments.find(params[:id])
 		
 		if @comment.update(params[:comment].permit(:body))
 			redirect_to article_path(@article), notice: "Your comment has been updated"
@@ -30,12 +30,12 @@ class CommentsController < ApplicationController
 		@comment = @article.comments.find(params[:id])
 	end
 	
-	def delete
+	def destroy
 		@article= Article.find(params[:article_id])
 		@comment = @article.comments.find(params[:id])
 		@comment.destroy
 		
-		redirect_to article_path(@article), notice: "Article is destroyed"
+		redirect_to article_path(@article), notice: "Comment is destroyed"
 	end
 	
 end
