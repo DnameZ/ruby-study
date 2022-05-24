@@ -16358,3 +16358,656 @@ Processing by PagesController#index as HTML
 Completed 200 OK in 62ms (Views: 60.8ms | ActiveRecord: 0.3ms | Allocations: 10877)
 
 
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /workspace/ruby-study/config/environment.rb:5)
+Started GET "/?t=1653416474144" for 193.19.222.123 at 2022-05-24 18:21:14 +0000
+Cannot render console from 10.3.0.168! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Parameters: {"t"=>"1653416474144"}
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/pages/index.html.erb:144
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/pages/index.html.erb:145
+  Rendered pages/index.html.erb within layouts/application (Duration: 112.6ms | Allocations: 20364)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 4.3ms | Allocations: 618)
+  Rendered layouts/_foot.html.erb (Duration: 60.6ms | Allocations: 252)
+Completed 200 OK in 488ms (Views: 396.4ms | ActiveRecord: 1.7ms | Allocations: 50280)
+
+
+Started GET "/pages/contact" for 193.19.222.123 at 2022-05-24 18:21:22 +0000
+Cannot render console from 10.3.0.168! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#contact as HTML
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/_mailer.html.erb (Duration: 228.5ms | Allocations: 17027)
+  Rendered pages/contact.html.erb within layouts/application (Duration: 231.2ms | Allocations: 17352)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 0.6ms | Allocations: 289)
+  Rendered layouts/_foot.html.erb (Duration: 0.2ms | Allocations: 95)
+Completed 200 OK in 540ms (Views: 314.1ms | ActiveRecord: 0.8ms | Allocations: 33365)
+
+
+Started GET "/" for 193.19.222.123 at 2022-05-24 18:21:29 +0000
+Cannot render console from 10.3.0.168! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/pages/index.html.erb:144
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/pages/index.html.erb:145
+  Rendered pages/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1534)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 0.6ms | Allocations: 283)
+  Rendered layouts/_foot.html.erb (Duration: 0.2ms | Allocations: 95)
+Completed 200 OK in 108ms (Views: 105.7ms | ActiveRecord: 0.2ms | Allocations: 8694)
+
+
+Started GET "/" for 193.19.222.123 at 2022-05-24 18:22:00 +0000
+Cannot render console from 10.3.0.168! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/pages/index.html.erb:144
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/pages/index.html.erb:145
+  Rendered pages/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1529)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 4.5ms | Allocations: 283)
+  Rendered layouts/_foot.html.erb (Duration: 0.2ms | Allocations: 95)
+Completed 200 OK in 46ms (Views: 44.5ms | ActiveRecord: 0.4ms | Allocations: 8707)
+
+
+Started GET "/pages/about" for 193.19.222.123 at 2022-05-24 18:23:45 +0000
+Cannot render console from 10.3.0.168! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 8.9ms | Allocations: 97)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 1.3ms | Allocations: 298)
+  Rendered layouts/_foot.html.erb (Duration: 0.3ms | Allocations: 95)
+Completed 200 OK in 32ms (Views: 30.6ms | ActiveRecord: 0.0ms | Allocations: 7401)
+
+
+Started GET "/pages/contact" for 193.19.222.123 at 2022-05-24 18:23:46 +0000
+Cannot render console from 10.3.0.168! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#contact as HTML
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/_mailer.html.erb (Duration: 97.5ms | Allocations: 8322)
+  Rendered pages/contact.html.erb within layouts/application (Duration: 97.8ms | Allocations: 8396)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 1.8ms | Allocations: 282)
+  Rendered layouts/_foot.html.erb (Duration: 0.2ms | Allocations: 95)
+Completed 200 OK in 222ms (Views: 143.3ms | ActiveRecord: 0.0ms | Allocations: 15452)
+
+
+Started GET "/" for 193.19.222.123 at 2022-05-24 18:23:48 +0000
+Cannot render console from 10.3.0.168! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/pages/index.html.erb:144
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/pages/index.html.erb:145
+  Rendered pages/index.html.erb within layouts/application (Duration: 8.8ms | Allocations: 1522)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 0.7ms | Allocations: 283)
+  Rendered layouts/_foot.html.erb (Duration: 0.2ms | Allocations: 95)
+Completed 200 OK in 100ms (Views: 98.2ms | ActiveRecord: 0.3ms | Allocations: 8681)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /workspace/ruby-study/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /workspace/ruby-study/config/environment.rb:5)
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateComments (20220524182737)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (3.9ms)[0m  [1m[35mCREATE TABLE "comments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "body" text, "user_id" integer NOT NULL, "article_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_03de2dc08c"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+, CONSTRAINT "fk_rails_3bf61a60d3"
+FOREIGN KEY ("article_id")
+  REFERENCES "articles" ("id")
+)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "index_comments_on_user_id" ON "comments" ("user_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_comments_on_article_id" ON "comments" ("article_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220524182737"]]
+  [1m[35m (21.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /workspace/ruby-study/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /workspace/ruby-study/config/environment.rb:5)
+Started GET "/articles/new" for 193.19.222.123 at 2022-05-24 19:58:13 +0000
+Cannot render console from 10.3.1.112! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#new as HTML
+Completed 401 Unauthorized in 29ms (ActiveRecord: 0.0ms | Allocations: 1427)
+
+
+Started GET "/articles/new" for 193.19.222.123 at 2022-05-24 19:58:13 +0000
+Cannot render console from 10.3.1.112! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#new as HTML
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms | Allocations: 504)
+
+
+Started GET "/users/sign_in" for 193.19.222.123 at 2022-05-24 19:58:13 +0000
+Cannot render console from 10.3.1.112! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.1ms | Allocations: 633)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 88.2ms | Allocations: 9575)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 1.9ms | Allocations: 553)
+  Rendered layouts/_foot.html.erb (Duration: 45.4ms | Allocations: 243)
+Completed 200 OK in 229ms (Views: 184.7ms | ActiveRecord: 0.0ms | Allocations: 29866)
+
+
+Started POST "/users/sign_in" for 193.19.222.123 at 2022-05-24 19:58:20 +0000
+Cannot render console from 10.3.1.112! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"PxQiZDKdIG3WhRKVWCe9hX/AzPVZtcoeYaffL4UP6jGgYqkL2vTSQ7gegF0uRy9YRuh5cm/SsdnfzLxWk8MXhw==", "user"=>{"email"=>"winterfell056@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (22.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "winterfell056@gmail.com"], ["LIMIT", 1]]
+Redirected to http://ruby-study-tjnmq.run-eu-central1.goorm.io/articles/new
+Completed 302 Found in 1233ms (ActiveRecord: 22.3ms | Allocations: 5463)
+
+
+Started GET "/articles/new" for 193.19.222.123 at 2022-05-24 19:58:21 +0000
+Cannot render console from 10.3.1.112! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 37.2ms | Allocations: 6511)
+  Rendered articles/new.html.erb within layouts/application (Duration: 41.4ms | Allocations: 6873)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 0.3ms | Allocations: 241)
+  Rendered layouts/_foot.html.erb (Duration: 0.1ms | Allocations: 95)
+Completed 200 OK in 85ms (Views: 54.4ms | ActiveRecord: 0.2ms | Allocations: 22576)
+
+
+Started GET "/articles/new" for 193.19.222.123 at 2022-05-24 19:58:26 +0000
+Cannot render console from 10.3.1.112! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 19.0ms | Allocations: 5762)
+  Rendered articles/new.html.erb within layouts/application (Duration: 23.9ms | Allocations: 5864)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 0.5ms | Allocations: 230)
+  Rendered layouts/_foot.html.erb (Duration: 0.2ms | Allocations: 95)
+Completed 200 OK in 43ms (Views: 39.3ms | ActiveRecord: 0.2ms | Allocations: 14541)
+
+
+Started POST "/articles" for 193.19.222.123 at 2022-05-24 19:58:37 +0000
+Cannot render console from 10.3.1.112! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"Nzooz9rgBbqDibkM9fxYVuJn7qtUUaQvqIu8ple3puxTWHdfqmuh5pfaV4N64D28tJ5dNjZH8bRalPGYtn0ErA==", "article"=>{"title"=>"", "content"=>""}, "commit"=>"Create Article"}
+  [1m[36mUser Load (71.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articles_controller.rb:28:in `block in create'
+  [1m[36mArticle Create (3.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "content", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["title", ""], ["content", ""], ["created_at", "2022-05-24 19:58:37.994618"], ["updated_at", "2022-05-24 19:58:37.994618"], ["user_id", 1]]
+  ↳ app/controllers/articles_controller.rb:28:in `block in create'
+  [1m[35m (18.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/articles_controller.rb:28:in `block in create'
+Redirected to http://ruby-study-tjnmq.run-eu-central1.goorm.io/articles/2
+Completed 302 Found in 104ms (ActiveRecord: 93.5ms | Allocations: 6149)
+
+
+Started GET "/articles/2" for 193.19.222.123 at 2022-05-24 19:58:38 +0000
+Cannot render console from 10.3.1.112! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:64:in `set_article'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/articles/show.html.erb:5
+  Rendered articles/show.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1260)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 0.3ms | Allocations: 247)
+  Rendered layouts/_foot.html.erb (Duration: 0.1ms | Allocations: 95)
+Completed 200 OK in 25ms (Views: 12.6ms | ActiveRecord: 0.6ms | Allocations: 10976)
+
+
+Started GET "/articles" for 193.19.222.123 at 2022-05-24 19:58:42 +0000
+Cannot render console from 10.3.1.112! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/index.html.erb within layouts/application
+  Rendered comments/_comment.html.erb (Duration: 0.3ms | Allocations: 91)
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 458)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 0.5ms | Allocations: 245)
+  Rendered layouts/_foot.html.erb (Duration: 0.1ms | Allocations: 95)
+Completed 200 OK in 15ms (Views: 12.0ms | ActiveRecord: 0.1ms | Allocations: 9168)
+
+
+Started GET "/articles" for 193.19.222.123 at 2022-05-24 20:03:10 +0000
+Cannot render console from 10.3.1.112! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/index.html.erb within layouts/application
+  Rendered comments/_comment.html.erb (Duration: 0.2ms | Allocations: 88)
+  Rendered comments/_form.html.erb (Duration: 6.3ms | Allocations: 1576)
+  Rendered articles/index.html.erb within layouts/application (Duration: 9.5ms | Allocations: 2214)
+Completed 500 Internal Server Error in 70ms (ActiveRecord: 0.1ms | Allocations: 5302)
+
+
+  
+ActionView::Template::Error (undefined method `comment' for nil:NilClass):
+    1: <%= simple_form_for ([@article, @article.comment.build]) do |f| %>
+    2: 
+    3: <%= f.input :body%>
+    4: 
+  
+app/views/comments/_form.html.erb:1
+app/views/articles/index.html.erb:3
+Started GET "/articles" for 193.19.222.123 at 2022-05-24 20:03:33 +0000
+Cannot render console from 10.3.1.112! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/index.html.erb within layouts/application
+  Rendered comments/_comment.html.erb (Duration: 0.2ms | Allocations: 88)
+  Rendered comments/_form.html.erb (Duration: 1.7ms | Allocations: 1585)
+  Rendered articles/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 2223)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.2ms | Allocations: 5371)
+
+
+  
+ActionView::Template::Error (undefined method `comments' for nil:NilClass):
+    1: <%= simple_form_for ([@article, @article.comments.build]) do |f| %>
+    2: 
+    3: <%= f.input :body%>
+    4: 
+  
+app/views/comments/_form.html.erb:1
+app/views/articles/index.html.erb:3
+Started GET "/articles" for 193.19.222.123 at 2022-05-24 20:05:01 +0000
+Cannot render console from 10.3.1.112! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#index as HTML
+  [1m[36mUser Load (43.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/index.html.erb within layouts/application
+  Rendered comments/_comment.html.erb (Duration: 0.3ms | Allocations: 88)
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 453)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 1.2ms | Allocations: 531)
+  Rendered layouts/_foot.html.erb (Duration: 0.6ms | Allocations: 243)
+Completed 200 OK in 74ms (Views: 26.7ms | ActiveRecord: 43.1ms | Allocations: 10966)
+
+
+Started GET "/articles" for 193.19.222.123 at 2022-05-24 20:05:30 +0000
+Cannot render console from 10.3.1.112! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/index.html.erb within layouts/application
+  Rendered comments/_comment.html.erb (Duration: 0.3ms | Allocations: 88)
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 458)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 1.2ms | Allocations: 531)
+  Rendered layouts/_foot.html.erb (Duration: 0.7ms | Allocations: 243)
+Completed 200 OK in 109ms (Views: 104.1ms | ActiveRecord: 0.2ms | Allocations: 10933)
+
+
+Started GET "/articles" for 193.19.222.123 at 2022-05-24 20:05:31 +0000
+Cannot render console from 10.3.1.112! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/index.html.erb within layouts/application
+  Rendered comments/_comment.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 117)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 0.4ms | Allocations: 243)
+  Rendered layouts/_foot.html.erb (Duration: 0.2ms | Allocations: 95)
+Completed 200 OK in 40ms (Views: 37.3ms | ActiveRecord: 0.1ms | Allocations: 8698)
+
+
+Started GET "/articles" for 193.19.222.123 at 2022-05-24 20:05:32 +0000
+Cannot render console from 10.3.1.112! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/index.html.erb within layouts/application
+  Rendered comments/_comment.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 116)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 0.4ms | Allocations: 239)
+  Rendered layouts/_foot.html.erb (Duration: 0.1ms | Allocations: 95)
+Completed 200 OK in 92ms (Views: 89.8ms | ActiveRecord: 0.1ms | Allocations: 8692)
+
+
+Started GET "/articles" for 193.19.222.123 at 2022-05-24 20:05:32 +0000
+Cannot render console from 10.3.1.112! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/index.html.erb within layouts/application
+  Rendered comments/_comment.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 116)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 0.4ms | Allocations: 239)
+  Rendered layouts/_foot.html.erb (Duration: 0.1ms | Allocations: 95)
+Completed 200 OK in 85ms (Views: 10.2ms | ActiveRecord: 0.2ms | Allocations: 8676)
+
+
+Started GET "/" for 193.19.222.123 at 2022-05-24 20:05:33 +0000
+Cannot render console from 10.3.1.112! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/pages/index.html.erb:144
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/pages/index.html.erb:145
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/pages/index.html.erb:145
+  Rendered pages/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 3343)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_nav.html.erb:17
+  Rendered layouts/_nav.html.erb (Duration: 2.1ms | Allocations: 1148)
+  Rendered layouts/_foot.html.erb (Duration: 0.1ms | Allocations: 95)
+Completed 200 OK in 95ms (Views: 93.5ms | ActiveRecord: 0.5ms | Allocations: 12122)
+
+
+Started GET "/" for 193.19.222.123 at 2022-05-24 20:05:34 +0000
+Cannot render console from 10.3.1.112! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/pages/index.html.erb:144
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/pages/index.html.erb:145
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/pages/index.html.erb:145
+  Rendered pages/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 2343)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_nav.html.erb:17
+  Rendered layouts/_nav.html.erb (Duration: 2.1ms | Allocations: 1139)
+  Rendered layouts/_foot.html.erb (Duration: 0.2ms | Allocations: 95)
+Completed 200 OK in 105ms (Views: 14.3ms | ActiveRecord: 0.4ms | Allocations: 10339)
+
+
+Started GET "/articles/1" for 193.19.222.123 at 2022-05-24 20:05:36 +0000
+Cannot render console from 10.3.1.112! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:64:in `set_article'
+  [1m[36mUser Load (45.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered comments/_form.html.erb (Duration: 111.9ms | Allocations: 9469)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/articles/show.html.erb:7
+  Rendered articles/show.html.erb within layouts/application (Duration: 119.7ms | Allocations: 10735)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 0.9ms | Allocations: 246)
+  Rendered layouts/_foot.html.erb (Duration: 0.1ms | Allocations: 95)
+Completed 200 OK in 260ms (Views: 208.5ms | ActiveRecord: 46.6ms | Allocations: 19914)
+
+
+Started GET "/articles/1" for 193.19.222.123 at 2022-05-24 20:06:15 +0000
+Cannot render console from 10.3.1.112! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:64:in `set_article'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/articles/show.html.erb:5
+  Rendered comments/_form.html.erb (Duration: 74.3ms | Allocations: 3330)
+  Rendered articles/show.html.erb within layouts/application (Duration: 81.7ms | Allocations: 4584)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 1.2ms | Allocations: 536)
+  Rendered layouts/_foot.html.erb (Duration: 0.5ms | Allocations: 243)
+Completed 200 OK in 204ms (Views: 185.0ms | ActiveRecord: 0.6ms | Allocations: 15524)
+
+
+Started POST "/articles/1/comments" for 193.19.222.123 at 2022-05-24 20:06:27 +0000
+Cannot render console from 10.3.1.112! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"wEJ4tBaipOrYcG8Jd0LPDtPbHjxduj3G32RRXUt8X5BDYpxkkD6TLvpZGRtYne60UJtC/A99FowYa8Dn7IG09g==", "comment"=>{"body"=>"Test comment"}, "commit"=>"Post your comment", "article_id"=>"1"}
+  [1m[36mUser Load (66.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:6:in `create'
+Completed 500 Internal Server Error in 75ms (ActiveRecord: 66.6ms | Allocations: 5346)
+
+
+  
+NoMethodError (undefined method `user' for nil:NilClass
+Did you mean?  super):
+  
+app/controllers/comments_controller.rb:8:in `create'
+Started POST "/articles/1/comments" for 193.19.222.123 at 2022-05-24 20:08:22 +0000
+Cannot render console from 10.3.1.112! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"wEJ4tBaipOrYcG8Jd0LPDtPbHjxduj3G32RRXUt8X5BDYpxkkD6TLvpZGRtYne60UJtC/A99FowYa8Dn7IG09g==", "comment"=>{"body"=>"Test comment"}, "commit"=>"Post your comment", "article_id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:6:in `create'
+Completed 500 Internal Server Error in 398ms (ActiveRecord: 77.3ms | Allocations: 27311)
+
+
+  
+NoMethodError (undefined method `user_id=' for nil:NilClass):
+  
+app/controllers/comments_controller.rb:8:in `create'
+Started POST "/articles/1/comments" for 193.19.222.123 at 2022-05-24 20:08:28 +0000
+Cannot render console from 10.3.1.112! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"wEJ4tBaipOrYcG8Jd0LPDtPbHjxduj3G32RRXUt8X5BDYpxkkD6TLvpZGRtYne60UJtC/A99FowYa8Dn7IG09g==", "comment"=>{"body"=>"Test comment"}, "commit"=>"Post your comment", "article_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mArticle Load (62.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:6:in `create'
+Completed 500 Internal Server Error in 69ms (ActiveRecord: 62.6ms | Allocations: 4643)
+
+
+  
+NoMethodError (undefined method `user_id=' for nil:NilClass):
+  
+app/controllers/comments_controller.rb:8:in `create'
+Started POST "/articles/1/comments" for 193.19.222.123 at 2022-05-24 20:08:29 +0000
+Cannot render console from 10.3.1.112! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"wEJ4tBaipOrYcG8Jd0LPDtPbHjxduj3G32RRXUt8X5BDYpxkkD6TLvpZGRtYne60UJtC/A99FowYa8Dn7IG09g==", "comment"=>{"body"=>"Test comment"}, "commit"=>"Post your comment", "article_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:6:in `create'
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.3ms | Allocations: 4642)
+
+
+  
+NoMethodError (undefined method `user_id=' for nil:NilClass):
+  
+app/controllers/comments_controller.rb:8:in `create'
+Started GET "/" for 193.19.222.123 at 2022-05-24 20:10:51 +0000
+Cannot render console from 10.3.1.112! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/pages/index.html.erb:144
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/pages/index.html.erb:145
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/pages/index.html.erb:145
+  Rendered pages/index.html.erb within layouts/application (Duration: 16.4ms | Allocations: 4150)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_nav.html.erb:17
+  Rendered layouts/_nav.html.erb (Duration: 2.9ms | Allocations: 1151)
+  Rendered layouts/_foot.html.erb (Duration: 0.2ms | Allocations: 95)
+Completed 200 OK in 100ms (Views: 94.1ms | ActiveRecord: 0.8ms | Allocations: 12911)
+
+
+Started GET "/articles/1" for 193.19.222.123 at 2022-05-24 20:10:56 +0000
+Cannot render console from 10.3.1.112! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:64:in `set_article'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/articles/show.html.erb:5
+  Rendered comments/_form.html.erb (Duration: 66.2ms | Allocations: 3214)
+  Rendered articles/show.html.erb within layouts/application (Duration: 69.8ms | Allocations: 4134)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 0.4ms | Allocations: 246)
+  Rendered layouts/_foot.html.erb (Duration: 0.1ms | Allocations: 95)
+Completed 200 OK in 115ms (Views: 84.5ms | ActiveRecord: 0.6ms | Allocations: 13418)
+
+
+Started POST "/articles/1/comments" for 193.19.222.123 at 2022-05-24 20:10:57 +0000
+Cannot render console from 10.3.1.112! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"ucDR9ONbERFebRGlv+Yu6LX6isQPgLL0Z+kPlnB9FqsAv9Q1dS23AMz4uTMfBfkDXCxWrwNcavLUUJ/0LEP0vg==", "comment"=>{"body"=>""}, "commit"=>"Post your comment", "article_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:6:in `create'
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.3ms | Allocations: 4652)
+
+
+  
+NoMethodError (undefined method `user_id=' for nil:NilClass):
+  
+app/controllers/comments_controller.rb:8:in `create'
+Started POST "/articles/1/comments" for 193.19.222.123 at 2022-05-24 20:11:37 +0000
+Cannot render console from 10.3.1.112! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"ucDR9ONbERFebRGlv+Yu6LX6isQPgLL0Z+kPlnB9FqsAv9Q1dS23AMz4uTMfBfkDXCxWrwNcavLUUJ/0LEP0vg==", "comment"=>{"body"=>""}, "commit"=>"Post your comment", "article_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:6:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/comments_controller.rb:10:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:10:in `create'
+  [1m[36mComment Create (0.3ms)[0m  [1m[32mINSERT INTO "comments" ("body", "user_id", "article_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["body", ""], ["user_id", 1], ["article_id", 1], ["created_at", "2022-05-24 20:11:38.514672"], ["updated_at", "2022-05-24 20:11:38.514672"]]
+  ↳ app/controllers/comments_controller.rb:10:in `create'
+  [1m[35m (13.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/comments_controller.rb:10:in `create'
+Redirected to http://ruby-study-tjnmq.run-eu-central1.goorm.io/articles/1
+Completed 302 Found in 139ms (ActiveRecord: 17.5ms | Allocations: 31636)
+
+
+Started GET "/articles/1" for 193.19.222.123 at 2022-05-24 20:11:38 +0000
+Cannot render console from 10.3.1.112! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:64:in `set_article'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/articles/show.html.erb:5
+  Rendered comments/_form.html.erb (Duration: 64.9ms | Allocations: 3142)
+  Rendered articles/show.html.erb within layouts/application (Duration: 67.3ms | Allocations: 4822)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 0.3ms | Allocations: 251)
+  Rendered layouts/_foot.html.erb (Duration: 0.2ms | Allocations: 95)
+Completed 200 OK in 80ms (Views: 76.4ms | ActiveRecord: 0.3ms | Allocations: 14231)
+
+
+Started POST "/articles/1/comments" for 193.19.222.123 at 2022-05-24 20:12:34 +0000
+Cannot render console from 10.3.1.112! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"aPqWswbfAxOLDjwT0nZH/VhrFo9o9Pyvly5szIqVc5br2nJjgEM016knSgH9qWZH2ytKTzoz1+VQIf12LWiY8A==", "comment"=>{"body"=>"Nice blog\r\n"}, "commit"=>"Post your comment", "article_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:6:in `create'
+  [1m[35m (70.7ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/comments_controller.rb:10:in `create'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:10:in `create'
+  [1m[36mComment Create (0.9ms)[0m  [1m[32mINSERT INTO "comments" ("body", "user_id", "article_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["body", "Nice blog\r\n"], ["user_id", 1], ["article_id", 1], ["created_at", "2022-05-24 20:12:34.895340"], ["updated_at", "2022-05-24 20:12:34.895340"]]
+  ↳ app/controllers/comments_controller.rb:10:in `create'
+  [1m[35m (14.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/comments_controller.rb:10:in `create'
+Redirected to http://ruby-study-tjnmq.run-eu-central1.goorm.io/articles/1
+Completed 302 Found in 222ms (ActiveRecord: 89.1ms | Allocations: 31601)
+
+
+Started GET "/articles/1" for 193.19.222.123 at 2022-05-24 20:12:34 +0000
+Cannot render console from 10.3.1.112! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:64:in `set_article'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/articles/show.html.erb:5
+  Rendered comments/_form.html.erb (Duration: 9.8ms | Allocations: 3132)
+  Rendered articles/show.html.erb within layouts/application (Duration: 12.8ms | Allocations: 4812)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 0.5ms | Allocations: 251)
+  Rendered layouts/_foot.html.erb (Duration: 0.1ms | Allocations: 95)
+Completed 200 OK in 36ms (Views: 25.3ms | ActiveRecord: 0.5ms | Allocations: 14414)
+
+
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" ORDER BY "comments"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
